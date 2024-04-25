@@ -1,0 +1,36 @@
+
+.registeredTasks{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin: 4rem;
+    /* border-bottom: 1px solid var(--gray-400);
+    padding-bottom: 1.5rem; TESTAR A LINHA ABAIXO DOS TÍTULOS*/
+}
+
+.unregistredTasks{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.registeredTasks img{
+    width: 3.5rem;
+    height: 3.5rem;
+    padding-bottom: 8px;
+    box-sizing: initial;
+}
+
+.registeredTasks p{
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gray-300);
+}
+
+.registeredTasks span{
+    font-size: 1rem;
+    color: var(--gray-300);
+}

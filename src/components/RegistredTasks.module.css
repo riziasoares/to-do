@@ -1,0 +1,115 @@
+
+.cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.75rem;
+}
+
+.cardsTasks {
+    background: var(--gray-500);
+    display: flex;
+    width: 46rem;
+    padding: 1rem;
+    border: 2px solid var(--gray-400);
+    border-radius: 8px;
+}
+
+.cardsTasks p{
+    display: inline-block;
+    vertical-align: middle; 
+    
+    color: var(--white);
+    line-height: 140%;
+    padding-right: 2rem;
+    text-align: left;
+    width: 38rem;
+}
+
+
+.cardsTasks button{
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+
+    display: flex;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin-left: 2rem;
+    align-items: center;
+    box-sizing: initial;
+    padding: 0.32rem;
+}
+
+.cardsTasks button:hover{
+    color: var(--red-100);
+    background: var(--gray-400);
+    border-radius: 4px;
+    
+}
+
+.checkboxAndText{
+    display: flex;
+    align-items: initial;
+}
+
+.checkboxInput{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    margin-right: 1rem;
+    
+    border: 2px solid var(--blue);
+    border-radius: 20px;
+    cursor: pointer; 
+    flex-shrink: 0;
+}
+
+.checkboxInput:not(:checked):hover {
+    background: var(--blue-dark);
+    transition: 0.1s;
+}
+
+.checkboxInput:checked {
+    display: inline-block;
+    width: 1.0625rem;
+    height: 1.0625rem;
+    
+    background-color: var(--purple-dark);
+    background-image: url('/src/assets/check.svg');
+    background-size: contain; 
+    background-position: center; 
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    border: 2px solid var(--purple-dark);
+    border-radius: 20px;
+    cursor: pointer; 
+    flex-shrink: 0;
+}
+
+.checkboxInput:checked:hover {
+    background: var(--purple);
+    background-image: url('/src/assets/check.svg');
+    background-size: contain; 
+    background-position: center; 
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+
+    border: 2px solid var(--purple);
+    border-radius: 20px;
+    cursor: pointer; 
+    flex-shrink: 0;
+    transition: 0.1s;
+}
+
+.checkboxInput:checked + p{
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+

@@ -1,0 +1,78 @@
+.header {
+    background: var(--gray-700);
+    height: 12.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4.5rem;
+}
+
+.header img {
+    display: flex;
+    height: 2.25rem;
+}
+
+.text {
+    font-size: 2.5rem;
+    padding: 0.75rem;
+    font-weight: 900;
+}
+
+.text p {
+    color: var(--blue);   
+}
+
+.text span {
+    color: var(--purple-dark);
+}
+
+.inputAndButton{
+    display: flex; 
+    margin-top: 3.3125rem; 
+    gap: 8px;
+}
+
+.inputAndButton input {
+    background: var(--gray-500);
+    width: 39.875rem;
+    height: 3.375rem;
+    padding: 1rem;    
+    border: 1px solid var(--gray-700);  
+    border-radius: 8px;
+    color: var(--white);
+}
+
+.inputAndButton::placeholder {
+    color: var(--gray-300);
+    font-size: 1rem;
+}
+
+.inputAndButton button{
+    background: var(--blue-dark);
+    color: var(--white);
+    width: 5.625rem;
+    border: 1px solid var(--gray-700);  
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.inputAndButton button p{
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    font-weight: 700;
+}
+
+.inputAndButton button:hover{
+    background: var(--blue);
+    transition: 0.1s;
+}
+
